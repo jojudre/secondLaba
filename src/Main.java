@@ -12,19 +12,20 @@ public class Main {
         arr.add(4,7);
         arr.add(1, 2);
         arr.add(13, 5);
-        arr.print();
-        System.out.println();
+        arr.println();
+
         int k = arr.countGreaterThan(r2);
         System.out.println(k);
+
         Rational maxR = arr.findMax();
-        maxR.print();
+        maxR.println();
+
         RationalList arr2 = new RationalList();
         arr2.add(9, -3); arr2.add(5, 6);  arr2.add(1, 5);
-        System.out.println();
         Polinom p1 = new Polinom(arr);
         Polinom p2 = new Polinom(arr2);
         Polinom p3 = p1.plus(p2);
-        System.out.println(p3);
+        p3.println();
     }
 
 }

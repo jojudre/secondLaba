@@ -14,7 +14,7 @@ public class RationalList {
         return(i);
     }
 
-    public Rational element( int i){
+    public Rational getElement(int i){
         return(massiv[i]);
     }
 
@@ -75,7 +75,14 @@ public class RationalList {
 
     public void print(){
         for( int i = 0; i <= massiv.length-1; i++){
-            massiv[i].print();
+            System.out.print(massiv[i]+" ");
         }
+    }
+
+    public void println(){
+        for( int i = 0; i <= massiv.length-1; i++){
+            System.out.print(massiv[i]+" ");
+        }
+        System.out.println();
     }
 }

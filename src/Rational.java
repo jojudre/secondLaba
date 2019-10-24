@@ -129,6 +129,10 @@ public class Rational {
     public void print(){
         System.out.print(m + "/" + n + " ");
     }
+    public void println(){
+        System.out.print(m + "/" + n + " ");
+        System.out.println();
+    }
 
     @Override
     public String toString() {
