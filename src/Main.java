@@ -5,6 +5,7 @@ public class Main {
         Rational r1 = new Rational( 8 , 10);
         int a = 5;
         Rational r2 = new Rational(2, 3);
+        System.out.println(r2.toFloat());
         Rational r3 = r1.plus(r2);
         RationalList arr = new RationalList();
         arr.add(r1);
