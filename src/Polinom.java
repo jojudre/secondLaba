@@ -11,9 +11,23 @@ public class Polinom {
         String s = "";
         for (int i = a.length() - 1; i >= 0; i--) {
             if (i != 0) {
-                s += "(" + a.getElement(i) + ")x^" + i + " + ";
+                if (a.getElement(i).getM()<0) {
+                    Rational rational = new Rational(a.getElement(i).getM()*-1,a.getElement(i).getN());
+                    s += "- (" + rational + ")x^" + i + " ";
+                } else {
+                    if (i  == a.length()-1) {
+                        s += "(" + a.getElement(i) + ")x^" + i + " ";
+                    } else s += "+ (" + a.getElement(i) + ")x^" + i + " ";
+                }
             } else {
-                s += "(" + a.getElement(i) + ")";
+
+                    if (a.getElement(i).getM()<0) {
+                        Rational rational = new Rational(a.getElement(i).getM()*-1,a.getElement(i).getN());
+                        s += "- (" + rational + ")"  ;
+                    } else {
+                        s += "+ (" + a.getElement(i) + ")" ;
+                    }
+
             }
         }
         return s;
