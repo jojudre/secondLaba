@@ -22,9 +22,12 @@ public class Main {
 
         RationalList arr2 = new RationalList();
         arr2.add(9, -3); arr2.add(5, 6);  arr2.add(1, 5);
+
         Polinom p1 = new Polinom(arr);
+        p1.println();
         Polinom p2 = new Polinom(arr2);
-        Polinom p3 = p1.plus(p2);
+        p2.println();
+        Polinom p3 = p1.minus(p2);
         p3.println();
     }
 
