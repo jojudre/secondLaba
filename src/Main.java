@@ -5,7 +5,6 @@ public class Main {
         Rational r1 = new Rational( 8 , 10);
         int a = 5;
         Rational r2 = new Rational(2, 3);
-        System.out.println(r2.toFloat());
         Rational r3 = r1.plus(r2);
         RationalList arr = new RationalList();
         arr.add(r1);
@@ -30,6 +29,7 @@ public class Main {
         p2.println();
         Polinom p3 = p1.plus(p2);
         p3.println();
+        System.out.println(arr.getSumOfList());
     }
 
 }

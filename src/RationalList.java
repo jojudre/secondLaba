@@ -85,4 +85,12 @@ public class RationalList {
         }
         System.out.println();
     }
+
+    public Rational getSumOfList(){
+        Rational sum = new Rational(0);
+        for ( int i = 0; i <= massiv.length-1; i++){
+            sum = sum.plus(massiv[i]);
+        }
+        return sum;
+    }
 }
