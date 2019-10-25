@@ -29,7 +29,7 @@ public class Main {
         p2.println();
         Polinom p3 = p1.plus(p2);
         p3.println();
-        System.out.println(arr.getSumOfList());
+        System.out.println(r1.toBeInteger());
     }
 
 }

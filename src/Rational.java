@@ -128,6 +128,13 @@ public class Rational {
         return ((float)m/n);
     }
 
+    public Rational toBeInteger(){
+        Rational rational = this.minus(1);
+        rational.m = rational.m*-1;
+
+        return(rational);
+    }
+
     public void print(){
         System.out.print(m + "/" + n + " ");
     }
